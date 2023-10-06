@@ -1,0 +1,92 @@
+Dependency Injection is a fundamental aspect of the Spring framework, through which the Spring container “injects” objects 
+into other objects or “dependencies”. Simply put, this allows for loose coupling of components and moves the responsibility 
+of managing components onto the container.
+
+JPA is the Java specification and not the implementation. 
+Hibernate is an implementation of JPA and uses common standards of Java Persistence API.
+
+In the MVC framework, 
+M stands for Model – used to work with the data,
+ V stands for View – used to work with presenting data to user and
+ C stands for Controller – that contains actual business logic to process the user input. 
+Spring Framework provides an Interface called Model(I) to work with the data
+
+Getters and setters are used to protect your data, 
+particularly when creating classes. For each instance variable, 
+a getter method returns its value while a setter method sets or updates its value
+
+Constructor in java is used to create the instance of the class. 
+Constructors are almost similar to methods except for two things - its name is the same as the class name
+ and it has no return type. Sometimes constructors are also referred to as special methods to initialize an object
+
+There can be a lot of usage of Java this keyword. In Java, this is a reference variable that refers to the current object.
+The this keyword can be used to refer current class instance variable. 
+If there is ambiguity between the instance variables and parameters, this keyword resolves the problem of ambiguity.
+
+factory
+cheker
+return
+
+spring.datasource.url = jdbc:mysql://localhost:3306/test_users?useSSL=false
+spring.datasource.username = root
+spring.datasource.password = pass
+
+spring.jpa.hibernate.ddl-auto = create
+
+
+
+Scanner scan = new Scanner ( System.in );
+
+id = scan.nextInt();
+
+name =scan.nextLine();
+
+age = scan.nextInt();
+
+
+
+System.out.println( i +” , ” + st + “ , ” + j );
+
+In above part of code, when we try to give input the second input line would be skipped.
+
+So we can the problem by doing it like this:
+
+Scanner scan = new Scanner ( System.in );
+
+
+id = scan.nextInt();
+
+scan.nextLine();
+
+name =scan.nextLine();
+
+age = scan.nextInt();
+
+
+
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int i = scan.nextInt();
+        scan.nextLine();
+        double d = scan.nextDouble();
+        scan.nextLine();
+        String s = scan.nextLine();
+        
+         scan.close();
+
+        // Write your code here.
+
+        System.out.println("String: " + s);
+        System.out.println("Double: " + d);
+        System.out.println("Int: " + i);
+    }
+}
+
+List <data-type> list1= new ArrayList();  
+List <data-type> list2 = new LinkedList();  
+List <data-type> list3 = new Vector();  
+List <data-type> list4 = new Stack();  
